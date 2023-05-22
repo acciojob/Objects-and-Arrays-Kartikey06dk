@@ -6,12 +6,9 @@ const person = {
 };
 
 // Write your code here, make sure the name of variables is exactly same as mentioned in the problem statement
-var team = players;
-var team1 = "";
-	for (let i = 0; i < players.length; i++) { 
-		team1=(window.team1[i]);
-	 }
-var cap1 = person();
+const team = players;
+const team1 = players.slice();
+const cap1 = Object.assign({}, person);
 
 window.players = players;
 window.person = person;
